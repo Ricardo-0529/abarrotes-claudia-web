@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes Claudia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        .contenedor {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 8%;
+            background: #fffdf5;
+            color: #28583c;
+        }
+
+        .logo {
+            width: 55px;
+            height: 55px;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        header p {
+            color: #718276;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        main {
+            flex: 1;
+            min-height: 550px;
+            display: flex;
+            align-items: center;
+            padding: 70px 10%;
+            background:
+                linear-gradient(90deg, #142d20e8, #142d2070),
+                url("https://images.unsplash.com/photo-1542838132-92c53300491e?w=1800")
+                center/cover no-repeat;
+        }
+
+        .contenido {
+            max-width: 650px;
+        }
+
+        .contenido span {
+            color: #d8e8b5;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        .contenido h2 {
+            font-size: clamp(38px, 6vw, 64px);
+            margin: 20px 0;
+            line-height: 1.1;
+        }
+
+        .contenido p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .video {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 15px 24px;
+            border-radius: 30px;
+            background: #d8e8b5;
+            color: #23452f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 25px 8%;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 13px;
+            background: #203d2c;
+        }
+
+        footer strong {
+            color: #d8e8b5;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 50px 7%;
+            }
+
+            .contenido p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <svg class="logo" viewBox="0 0 100 100"
+                 xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="47" fill="#28583c"/>
+                <path d="M25 56 L50 25 L75 56"
+                      fill="none" stroke="#d8e8b5"
+                      stroke-width="7" stroke-linecap="round"/>
+                <path d="M32 53 V76 H68 V53"
+                      fill="none" stroke="white"
+                      stroke-width="6"/>
+                <path d="M44 76 V60 H56 V76"
+                      fill="none" stroke="#d8e8b5"
+                      stroke-width="5"/>
+            </svg>
+
+            <div>
+                <h1>Abarrotes Claudia</h1>
+                <p>Lo que necesitas, cerca de ti.</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="contenido">
+                <span>Bienvenidos</span>
+
+                <h2>Calidad y frescura para tu hogar.</h2>
+
+                <p>
+                    En Abarrotes Claudia creemos que las pequeñas
+                    compras hacen grandes momentos. Encuentra
+                    productos para tu día a día en un espacio
+                    cercano y familiar.
+                </p>
+
+                <a class="video"
+                   href="https://www.youtube.com/results?search_query=recetas+con+frutas+y+verduras"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Ver videos en YouTube →
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>Conceptualización de servicios en la nube</strong></p>
+            <p>Ricardo Raúl Romero</p>
+            <p>Código: 220238461</p>
+            <p>ricardo.rieblig2384@alumnos.udg.mx</p>
+            <p>© 2026 Abarrotes Claudia</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
